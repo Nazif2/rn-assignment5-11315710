@@ -1,15 +1,27 @@
-> Why do I have a folder named ".expo" in my project?
+# rn-assignment5-11146019
+rn-assignment5-11146019 project
 
-The ".expo" folder is created when an Expo project is started using "expo start" command.
+Overview
+Finance Tracker is a mobile application built with React Native that helps users manage their financial transactions. Users can view their recent transactions, manage different financial operations like sending, receiving, loans, and top-ups, and switch between light and dark themes.
 
-> What do the files contain?
+Features
+Home Screen with user profile, financial operations, and recent transactions.
+Settings Screen with various options and a theme toggle.
+Light and Dark mode support.
+Navigation between Home and Settings screens.
 
-- "devices.json": contains information about devices that have recently opened this project. This is used to populate the "Development sessions" list in your development builds.
-- "packager-info.json": contains port numbers and process PIDs that are used to serve the application to the mobile device/simulator.
-- "settings.json": contains the server configuration that is used to serve the application manifest.
+Home Screen Component
+The HomeScreen component displays the user's profile, a list of financial operations (Send, Receive, Loan, Topup), and recent transactions. It also includes navigation to the Settings screen and a toggle for dark mode.
 
-> Should I commit the ".expo" folder?
+Settings Screen Component
+The SettingsScreen component provides various settings options like changing language, profile management, contact support, changing password, and privacy policy. It includes a toggle switch to change the theme.
 
-No, you should not share the ".expo" folder. It does not contain any information that is relevant for other developers working on the project, it is specific to your machine.
+Navigation
+React Navigation is used to switch between the Home and Settings screens.
 
-Upon project creation, the ".expo" folder is already added to your ".gitignore" file.
+Dark Mode Implementation
+A state variable isDarkMode is used to track the current theme. Conditional styling is applied to the components based on the isDarkMode state.
+
+Styles
+Styles are defined using StyleSheet.create and applied conditionally based on the isDarkMode state. 
+
