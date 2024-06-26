@@ -36,7 +36,7 @@ const HomeScreen = ({ navigation, isDarkMode, setIsDarkMode }) => {
           <Image source={profileImage} style={styles.profileImage} />
           <View>
             <Text style={[styles.text, isDarkMode && styles.darkText]}>Welcome back,</Text>
-            <Text style={[styles.text, styles.boldText, isDarkMode && styles.darkText]}>Papa Kwasi</Text>
+            <Text style={[styles.text, styles.boldText, isDarkMode && styles.darkText]}>Nazif</Text>
           </View>
         </View>
         <TouchableOpacity style={styles.searchIconContainer}>
